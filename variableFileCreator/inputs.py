@@ -10,7 +10,7 @@ LAN_MAC = "88:3a:30:cf:03:c0"
 SERIAL = "CN01K91023"
 
 # 1 = standalone, 2/3/4 = VSF stack size
-STACK_SIZE = 2
+STACK_SIZE = 1
 
 # Required only when STACK_SIZE > 1.
 # Add exactly one entry for each stack member, in member order.
@@ -20,8 +20,7 @@ STACK_SIZE = 2
 #     {"part_number": "JL558A", "mac": "88:3a:30:46:b4:40"},
 # ]
 STACK_MEMBERS = [
-    {"part_number": "JL558A", "mac": "88:3a:30:cf:03:c0"},
-    {"part_number": "JL558A", "mac": "88:3a:30:cf:03:c2"},
+
 ]
 
 # Priority defaults used by the initial logic.
@@ -40,7 +39,7 @@ REFERENCE_VARIABLES = {
       "_sys_oobm_command": "oobm\n   ip address dhcp-bootp\n   member 1\n      ip address dhcp-bootp\n      exit\n   member 2\n      ip address dhcp-bootp\n      exit\n   exit\n",
       "_sys_serial": "SG01JQK06R",
       "_sys_snmpv3_engineid": "00:00:00:0b:00:00:10:4f:58:f7:fb:a2",
-      "_sys_stack_command": "stacking\n   member 1 type \"JL319A\" mac-address 104f58-f7fb80\n   member 1 priority 250\n   member 1 flexible-module A type JL083A\n   member 2 type \"JL319A\" mac-address 104f58-f70c00\n   member 2 priority 200\n   member 2 flexible-module A type JL083A\n   exit\n",
+      "_sys_stack_command": "",
       "_sys_template_header": "; hpStack_WC Configuration Editor; Created on release #WC.16.11.0016\n; Ver #14:67.6f.f8.1d.9b.3f.bf.bb.ef.7c.59.fc.6b.fb.9f.fc.ff.ff.37.ef:44\n",
       "_sys_use_dhcp": "0",
       "_sys_vlan_1_tag_command": "1/19,2/19,Trk1-Trk5,Trk7,Trk10-Trk12",
