@@ -1,0 +1,133 @@
+{
+  "store_id": "JS5285",
+  "precheck_status": "PASS",
+  "summary": "The VLAN1 and VLAN2 addressing supplied for staging matches the corresponding Infoblox network scopes.",
+  "address_validation": [
+    {
+      "vlan": "1",
+      "engineer_provided": "10.189.248.xx",
+      "infoblox_network": "10.189.248.0/25",
+      "gateway": "10.189.248.1",
+      "result": "PASS",
+      "message": "First three octets match: 10.189.248"
+    },
+    {
+      "vlan": "2",
+      "engineer_provided": "10.201.248.xx",
+      "infoblox_network": "10.201.248.0/25",
+      "gateway": "10.201.248.1",
+      "result": "PASS",
+      "message": "First three octets match: 10.201.248"
+    }
+  ],
+  "vlan_configuration": [
+    {
+      "vlan": "1",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN1 Primary",
+      "network": "10.189.248.0/25",
+      "gateway": "10.189.248.1",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "1",
+      "role": "Secondary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN1 Secondary",
+      "network": "10.189.248.144/28",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    },
+    {
+      "vlan": "2",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN2",
+      "network": "10.201.248.0/25",
+      "gateway": "10.201.248.1",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "5",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN5 primary",
+      "network": "10.189.248.136/29",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    },
+    {
+      "vlan": "5",
+      "role": "Secondary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN5 Secondary",
+      "network": "10.189.248.168/29",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    },
+    {
+      "vlan": "6",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN6",
+      "network": "10.189.248.176/28",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    },
+    {
+      "vlan": "10",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN10",
+      "network": "10.189.248.160/29",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    },
+    {
+      "vlan": "20",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN20",
+      "network": "10.189.248.240/28",
+      "gateway": "10.189.248.241",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "22",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN22",
+      "network": "10.189.248.192/27",
+      "gateway": "10.189.248.193",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "23",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN23",
+      "network": "10.189.248.224/28",
+      "gateway": "10.189.248.225",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "300",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- VLAN300",
+      "network": "10.47.72.0/24",
+      "gateway": "10.47.72.1",
+      "network_view": "default",
+      "status": "Present"
+    },
+    {
+      "vlan": "Spare",
+      "role": "Primary",
+      "description": "JS5285 Old Trafford Brian Statham Way- Spare",
+      "network": "10.189.248.128/29",
+      "gateway": null,
+      "network_view": "default",
+      "status": "Present - Gateway option missing"
+    }
+  ]
+}
