@@ -1,0 +1,14 @@
+{
+  "store_identifier": "JS",
+  "store_number": "9900",
+  "store_name": "API Testing",
+  "add_pre_staging_tag": true,
+  "region": "N07",
+  "site_address": {
+    "address": "TEST",
+    "city": "TEST",
+    "state": "Greater Manchester",
+    "country": "United Kingdom",
+    "zipcode": "M16 0PU"
+  }
+}

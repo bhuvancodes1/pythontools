@@ -1,0 +1,14 @@
+{
+  "store_identifier": "JS",
+  "store_number": "5285",
+  "store_name": "Old Trafford Brian Statham Way",
+  "add_pre_staging_tag": true,
+  "region": "N07",
+  "site_address": {
+    "address": "Brian Statham Way",
+    "city": "Stretford",
+    "state": "Greater Manchester",
+    "country": "United Kingdom",
+    "zipcode": "M16 0PU"
+  }
+}
